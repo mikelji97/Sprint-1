@@ -1,0 +1,141 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+.global {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.header {
+    max-width: 1170px;
+    background-color: black;
+    padding: 15px;
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    height: 35px;
+    background-color: rgb(117, 116, 151);
+    padding: 15px;
+    
+}
+.container .logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: rgb(255, 106, 106);
+    margin-left: 5px;
+    height: 30px;
+}
+.container .nav {
+    display: flex;
+    align-items: center;
+    flex: 4;
+    background-color: rgb(255, 106, 106);
+    height: 30px;
+    
+}  
+.container .social {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: rgb(255, 106, 106);
+    margin-right: 15px;
+    height: 30px;
+}
+.banner {
+    display: flex;
+    height: 50px;
+    background-color: rgb(255, 167, 2);
+    align-items: center;
+    padding-left: 10px;
+
+}
+.banner .banner1{
+    display: flex;
+    background-color :rgb(255, 251, 0);
+    flex: 1;
+    height: 25px;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.section{
+    display: flex;;
+    background-color: black;
+    margin-top: 15px;
+    padding: 15px;
+    height: 180px;
+    max-width: 1170px;    
+}
+.section .article {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: rgb(117, 117, 168);
+    margin-right: 170px;
+    
+}
+.article .article1 {
+    display: flex;
+    background-color: rgb(88, 111, 238);
+    height: 30px;
+    flex: 40%;
+    align-items: center;
+    margin-left: 10px;
+}
+.article .article2 {
+    display: flex;
+    background-color: rgb(88, 111, 238);
+    height: 30px;
+    flex: 40%;
+    align-items: center;
+    margin-left: 10px;
+}
+.article .article3 {
+    display: flex;
+    background-color: rgb(88, 111, 238);
+    height: 30px;   
+    flex: 30%;
+    align-items: center;
+    margin-left: 10px;
+}
+.article .article4 {
+    display: flex;
+    background-color: rgb(88,111, 238);
+    height: 30px;
+    flex: 30%;
+    align-items: center;
+    margin-left: 10px;
+}  
+.article .navegacion {
+    display: flex;
+    background-color: rgb(148, 216, 228);
+    height: 30px;
+    flex: 100%;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+.aside {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 66, 113);
+    gap: 15px;
+    padding: 100px;
+    
+}
+.aside .publi1 {
+    display: flex;
+    background-color: rgb(252, 255, 66);
+    padding: 25px;
+}
+.aside .publi2 {
+    display: flex;
+    background-color: rgb(252, 255, 66);
+}
+
