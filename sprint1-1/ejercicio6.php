@@ -7,7 +7,7 @@ Importante
 
 Consejo: puede que la función rand () te resulte útil. */
 
-      function isBitten() {
+      function isBitten() : bool {
     
         $resultado = rand(0,1);
     

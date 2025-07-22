@@ -5,7 +5,7 @@ Si no se incluye un número determinado, el número deberá tener un valor por d
 Además, esta función debe tener un segundo parámetro que indique de cuánto a cuánto se cuenta(De 1 en 1, de 2 en 2…).La cuenta debe mostrarse por pantalla paso a paso. */
 
 
-function contarSeries($numFinal = 10, $serie = 1) {
+function contarSeries(int $numFinal = 10, int $serie = 1) : void {
 $i=0;
 
 while ($i <= $numFinal) { 

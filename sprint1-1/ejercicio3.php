@@ -23,19 +23,20 @@ echo "N % M = " . $N % $M . "<br> <br>";
 
 
 
-echo "X^2 = " . $X **2 . "<br>";
-echo "Y^2 = " . $Y **2 . "<br>";
-echo "N^2 = " . $N **2 . "<br>";
-echo "M^2 = " . $M **2 . "<br> <br>";
+echo "X^2 = " . $X *2 . "<br>";
+echo "Y^2 = " . $Y *2 . "<br>";
+echo "N^2 = " . $N *2 . "<br>";
+echo "M^2 = " . $M *2 . "<br> <br>";
 
 echo "N + M + Y + X = " . $N + $M + $Y + $X . "<br>";
+echo "N * M * Y * X = " . $N * $M * $Y * $X . "<br>";
 
-$a = readline("Introduce un número: ");
-$b = readline("Introduce otro número: ");   
+$a = (float)readline("Introduce un número: ");
+$b = (float)readline("Introduce otro número: ");   
 
 $operacion = readline("Escoja una operacion (+,-,/,*):");
 
-function calculadora ($a, $b, $operacion) {
+function calculadora (float $a, float $b, string $operacion) : string {
     switch ($operacion) {
         case '+':
             return $a+$b;
@@ -46,7 +47,7 @@ function calculadora ($a, $b, $operacion) {
         case'/':
             return $a/$b;
         default:
-            return "opercaion incorrecta";
+            return "La operacion introducida es incorrecta.";
         }
 }
 
