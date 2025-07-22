@@ -7,9 +7,9 @@ Por ejemplo:
 Si tenemos [“hola”, “Php”, “Html”] devolverá true si preguntamos por “h” pero falso si preguntamos por “l”. */
 
 $palabras = array("hola", "Php", "Html");
-$caracter = "h";
+$caracter = "l";
 
-function comprobar($palabras, $caracter){
+function charAppearsInEveryWord(array $palabras, string $caracter) : bool {
     for($i=0; $i < count($palabras); $i++){
     if (stripos($palabras[$i],$caracter) === false){
         return false;
@@ -17,8 +17,8 @@ function comprobar($palabras, $caracter){
     }
     return true;
 }
-    if (comprobar($palabras, $caracter)){
-        echo "True";
+    if (charAppearsInEveryWord($palabras, $caracter)){
+        echo "El caracter " . $caracter . " aparece en todas las palabras del array.";
     } else {
-        echo "False";
+        echo "El caracter " . $caracter . " no aparece en todas las palabras del array.";
     }
