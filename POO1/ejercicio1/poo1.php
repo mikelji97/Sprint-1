@@ -8,7 +8,7 @@
     $this -> salario = $salario;
    }
 
-   public function print() {
+   public function print() : void {
     echo "nombre: " . $this->nombre . "\n";
     if ($this -> salario >600) {
         echo "A pagar impuestos";
