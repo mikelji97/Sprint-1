@@ -6,6 +6,7 @@ abstract class Animal {
     function __construct($nombre){
     $this -> nombre = $nombre;
     }
+    abstract public function makesound();
     }
 
 ?>

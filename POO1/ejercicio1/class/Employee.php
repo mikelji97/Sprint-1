@@ -12,7 +12,7 @@
         public function print(): void
         {
             echo "Nombre: " . $this->nombre . ",\n";
-            if ($this->salario > 600) {
+            if ($this->salario > 6000) {
                 echo "A pagar impuestos.";
             } else {
                 echo "Te has librado.<br>";
