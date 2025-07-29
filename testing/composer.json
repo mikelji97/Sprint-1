@@ -1,0 +1,20 @@
+{
+    "name": "mikel/testing",
+    "description": "Ejercicio testing",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mikel\\Testing\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mikel Jiménez Álvarez",
+            "email": "mikel.falcesino@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10"
+    }
+}
