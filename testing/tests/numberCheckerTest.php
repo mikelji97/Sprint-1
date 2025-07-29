@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 
 
-require_once "numberChecker";
+
 
 class NumberCheckerTest extends TestCase{
 
@@ -15,7 +15,7 @@ class NumberCheckerTest extends TestCase{
 		$number = new NumberChecker(51);
 		$this ->assertTrue($number->isPositive());
 	}
-		public function testIsNotEven() {
+	public function testIsNotEven() {
 		$number = new numberChecker(17);
 		$this->assertFalse($number->IsEven());
 	}

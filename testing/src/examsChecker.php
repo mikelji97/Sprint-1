@@ -14,7 +14,7 @@ class ExamsChecker {
         } else if ($this->nota > 33 && $this->nota < 45) {
             return "Eres de Tercera Division.";
         } else if ($this->nota > 0 && $this->nota <= 33) {
-            return "Losiento, has suspendido.";
+            return "Lo siento, has suspendido.";
         } else {
             return "Nota introducida no es correcta.";
         }

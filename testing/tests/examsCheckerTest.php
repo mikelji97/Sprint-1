@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once "examschecker";
+
 
 
 class ExamsCheckerTest extends TestCase{
