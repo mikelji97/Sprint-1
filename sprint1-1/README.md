@@ -51,5 +51,85 @@ suma, resta, producto, módulo, etc.
 
 **b)** Se programa una función calculadora:
 
-```php
-operar($num1, $num2, $operacion);
+---
+### ✏️ Ejercicio 4: Función contador con pasos
+
+* **Función:** `contarHasta($max = 10, $paso = 1);`
+* **Descripción:** Permite contar desde 0 hasta `$max`.
+* **Características:**
+    * Se puede elegir el tamaño del `$paso`.
+    * La cuenta se muestra paso a paso en pantalla.
+
+---
+
+### ✏️ Ejercicio 5: Clasificación de una nota
+
+* **Descripción:** Se escribe una función que recibe una nota (en porcentaje) y devuelve el grado del estudiante.
+* **Reglas:**
+
+| Nota | Grado |
+| :--- | :--- |
+| $\ge 60\%$ | Primera División |
+| $45\% \text{ – } 59\%$ | Segunda División |
+| $33\% \text{ – } 44\%$ | Tercera División |
+| $< 33\%$ | Reprobado |
+
+---
+
+### ✏️ Ejercicio 6: Función aleatoria (50/50)
+
+* **Función:** `isBitten()`
+* **Descripción:** Simula el meme "¡Charlie me mordió el dedo!" 😂
+* **Resultado (usando `rand()`):**
+    * `TRUE` (50% de probabilidad)
+    * `FALSE` (50% de probabilidad)
+
+---
+
+## 🧱 Nivel 2 – Ejercicios
+
+### 📞 Ejercicio 1: Costo de llamada telefónica
+
+* **Descripción:** La función recibe los minutos de una llamada y devuelve el costo final.
+* **Reglas de costo:**
+
+| Duración de llamada | Costo |
+| :--- | :--- |
+| Hasta 3 minutos | 0,10€ total |
+| Minutos adicionales | +0,05€ por minuto |
+
+---
+
+### 🎮 Ejercicio 2: Clasificación de puntos en un juego
+
+* **Entrada:** Se ingresan 3 puntuaciones (entre 0 y 9999).
+* **Cálculos:**
+    * Suma total
+    * Media
+    * Clasificación
+* **Estructura del código:**
+    > Este ejercicio se resuelve usando **varias funciones** para mantener el código claro: una para sumar, otra para la media y otra para clasificar.
+* **Reglas de clasificación:**
+
+| Total de puntos | Clasificación |
+| :--- | :--- |
+| $< 4000$ | Principiante |
+| $< 8000$ | Intermedio |
+| $\ge 8000$ | Profesional |
+
+---
+
+## 🚀 Cómo ejecutar los ejercicios
+
+1.  Copia el proyecto dentro de la carpeta **htdocs** (si usas XAMPP).
+2.  Inicia el servidor **Apache**.
+3.  Abre el navegador y accede a:
+    ```
+    http://localhost/NOMBRE_DEL_PROYECTO
+    ```
+
+## 🎯 Conclusión
+
+Este Sprint consolida las bases del pensamiento lógico y la estructura de programas en PHP. Se aprende a dividir problemas, crear funciones, reutilizar código y controlar el flujo del programa.
+
+---
