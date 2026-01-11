@@ -1,19 +1,19 @@
 <?php
 
+function costoLlamada(int $minutos): int
+{
+    $precioBase = 10;
+    $minutosBase = 3;
+    $precioExtra = 5;
+    $minutosExtra = $minutos - $minutosBase;
+    $costoExtra = $minutosExtra * $precioExtra;
 
-function totalToPay (int $call) {
-    
-    if ($call <=3){
-        $call = 10;
-        return "La llamada realizada tiene un coste de " . $call . " centimos.";
-
-    }else if ($call >3){
-            $resultado = 10;
-        for ($i=3; $i <= $call; $i++ ){
-            $resultado += 5;
-        }
-        return "La llamada realizada tiene un coste de " . $resultado . " centimos.";
-
+    if ($minutos <= $minutosBase) {
+        return $precioBase;
+    } else {
+        return $precioBase + $costoExtra;
     }
 }
-    echo totalToPay(15);
+
+
+echo "El coste de la llamada es: " . costoLlamada(25) . " centimos.";
