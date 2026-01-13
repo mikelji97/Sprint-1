@@ -5,15 +5,66 @@ function costoLlamada(int $minutos): int
     $precioBase = 10;
     $minutosBase = 3;
     $precioExtra = 5;
-    $minutosExtra = $minutos - $minutosBase;
-    $costoExtra = $minutosExtra * $precioExtra;
 
     if ($minutos <= $minutosBase) {
         return $precioBase;
-    } else {
-        return $precioBase + $costoExtra;
     }
+
+    $minutosExtra = $minutos - $minutosBase;
+    return $precioBase + ($minutosExtra * $precioExtra);
 }
 
 
-echo "El coste de la llamada es: " . costoLlamada(25) . " centimos.";
+echo "Costo de llamada de 2 minutos: " . costoLlamada(15) . " Centimos "; // Esperado: 10 unidades
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
