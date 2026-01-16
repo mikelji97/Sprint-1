@@ -1,10 +1,9 @@
 <?php
-require_once 'class/Animal.php';
-require_once 'class/Sonido.php';
+require_once 'Animal.php';
 
-class Perro extends Animal implements Sonido
+class Perro extends Animal
 {
-  public function makesound() : void{
-    echo "guau,guau";
+  public function makesound() : string {
+    return "guau, guau";
   }
 }
